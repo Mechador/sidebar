@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* code for sidebar */ 
+
+.nav-side-menu {
+  overflow: auto;
+  width: 260px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+
+.nav-side-menu li.main-list {
+    height: 100px;
+}
+
+.nav-side-menu ul,
+.nav-side-menu li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  cursor: pointer;
+}
+.collapsed {
+    color: rgba(0, 0, 0, 0.7);
+    font: 300 18px / 36px Oxygen;
+}
+
+
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  margin-left: 0px;
+  padding-left: 65px;
+  border: none;
+  background-color: #fff;
+  line-height: 28px;
+}
+
+ul.sub-menu li a{
+    color: rgba(0, 0, 0, 0.7);
+    font: 400 14px / 35px Oxygen;
+}
+
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.nav-side-menu li {
+  padding-left: 0px;
+}
+.nav-side-menu li a {
+  color: black;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font: 300 18px / 36px Oxygen;
+}
+
+.nav-side-menu li:hover {
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .nav-side-menu .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10 !important;
+    display: block;
+    padding: 3px;
+    width: 40px;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+
+
+li.home-logo {
+      padding-left: 45px;
+      background: url(img/home.png) no-repeat left center;
+}
+
+li.mng-stf {
+    padding-left: 40px;
+    background: url(img/manage-staff.png) no-repeat left center;
+}
+li.hire-stf {
+    padding-left:40px;
+    background: url(img/speake.png) no-repeat left center;
+}
+
+li.cmpn-det {
+    padding-left:40px;
+    background: url(img/comp-details.png) no-repeat left center;
+}
+
+li.my-dtls {
+    padding-left:40px;
+    background: url(img/my-details.png) no-repeat left center;
+}
+
+li.adm-logo {
+    padding-left:40px;
+    background: url(img/admin-pict.png) no-repeat left center;
+}
+
+ul li {
+    position: relative;
+}
+
+ ul li.collapsed a::after {
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    display: block;
+    width: 11px;
+    height: 6px;
+    background: url(img/arrow-down.png) no-repeat;
+    content: '';
+}
+
+/* end of code for sidebar */ 
+
